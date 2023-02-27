@@ -1,16 +1,7 @@
-const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
-var formPdfBytes; 
-
-
-async function loadPdf(){
-    const uint8Array = fs.readFileSync('HtR1-Page_Editable.pdf');
-    formPdfBytes = await fetch(PDFDocument.load(uint8Array)).then(res => res.arrayBuffer());
-}
-
-
 async function fillForm(){
-    //const formUrl = 'SamCK98.github.io/HtR1-Page_Editable.pdf';
-    //const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
+
+    const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
+    const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
 
     const pdfDoc = await PDFDocument.load(formPdfBytes);
     const form = pdfDoc.getForm();
