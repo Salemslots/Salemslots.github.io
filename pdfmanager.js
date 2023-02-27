@@ -1,4 +1,4 @@
-import { PDFDocument } from 'node_modules/pdf-lib/cjs/index'
+import { PDFDocument } from './node_modules/pdf-lib/dist/pdf-lib.js';
 
 async function fillForm(){
 
