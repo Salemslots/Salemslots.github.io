@@ -1,5 +1,5 @@
 const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
-const formPdfBytes = 0; 
+var formPdfBytes; 
 
 
 async function loadPdf(){
