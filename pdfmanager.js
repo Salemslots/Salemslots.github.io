@@ -1,6 +1,8 @@
 async function fillForm(){
-    const formUrl = 'HtR1-Page_Editable.pdf';
-    const pdfDoc = await PDFDocument.load(await fetch(formUrl).then(res => res.arrayBuffer()));
+    const formUrl = 'SamCK98.github.io/HtR1-Page_Editable.pdf';
+    const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
+
+    const pdfDoc = await PDFDocument.load(formPdfBytes);
     const form = pdfDoc.getForm();
 
     const nameField = form.getTextField('name');
