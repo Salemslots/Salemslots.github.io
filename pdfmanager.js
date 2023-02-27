@@ -1,14 +1,5 @@
-const { PDFDocument, StandardFonts, rgb } = PDFLib
-
-function fillbox (boxnumber, boxvalue, boxname){
-    for (let step = 0; step < boxvalue; step++){
-        let box = boxnumber + step;
-        form.getCheckBox(boxname + box).check();
-    }
-}
-
 async function fillForm(){
-    const formUrl = 'howaitot.neoncities.org/hunter/HtR1-Page_Editable.pdf'
+    const formUrl = 'HtR1-Page_Editable.pdf'
     const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer())
 
     const pdfDoc = await PDFDocument.load(formPdfBytes)
@@ -201,19 +192,23 @@ async function fillForm(){
     fillbox(1, willpower, 'willdot');
 
     const pdfBytes = await pdfDoc.save();
-    download (pdfBytes, "Hunter_the_Reckoning_Character_Sheet.pdf", "application/pdf");
+    download (pdfBytes, "HtR1-Page_Editable.pdf", "application/pdf");
 
 }
+
 
 
 document.getElementById("getpdfbutton").addEventListener('click', function(){
     if (freebiecode == false){
         confirm("You still have points to spend!")
     }
-    if (freebiecode == true && freebiepoints == 0){
+    if (freebiecode == true && freebiepoints != 0){
         if (confirm("You still have freebiepoints... Cancel if you still want to spend them")){
             fillForm();
         }
+    }
+    if (freebiecode == true && freebiepoints == 0){
+        fillForm();
     }
 
 })
