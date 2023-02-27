@@ -1,3 +1,5 @@
+import { PDFDocument } from 'pdf-lib'
+
 async function fillForm(){
 
     const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
