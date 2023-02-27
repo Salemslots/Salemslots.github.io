@@ -3,7 +3,8 @@ var formPdfBytes;
 
 
 async function loadPdf(){
-    formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
+    const uint8Array = fs.readFileSync('HtR1-Page_Editable.pdf');
+    formPdfBytes = await fetch(PDFDocument.load(uint8Array)).then(res => res.arrayBuffer());
 }
 
 
