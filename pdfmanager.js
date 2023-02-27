@@ -1,4 +1,4 @@
-import { PDFDocument } from 'https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js'
+import { PDFDocument } from 'node_modules/pdf-lib/cjs/index'
 
 async function fillForm(){
 
