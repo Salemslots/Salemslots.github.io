@@ -1,4 +1,4 @@
-import { PDFDocument } from './node_modules/pdf-lib/dist/pdf-lib.js'
+import { PDFDocument } from 'https://unpkg.com/pdf-lib/dist/pdf-lib.js'
 
 async function fillForm(){
 
