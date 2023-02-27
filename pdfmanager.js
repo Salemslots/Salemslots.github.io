@@ -211,7 +211,7 @@ document.getElementById("getpdfbutton").addEventListener('click', function(){
     }
     if (freebiecode == true && freebiepoints == 0){
         if (confirm("You still have freebiepoints... Cancel if you still want to spend them")){
-            async.fillForm();
+            fillForm();
         }
     }
 
