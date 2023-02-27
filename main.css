@@ -1,0 +1,25 @@
+table{
+    text-align: left;
+    float: left;
+}
+
+label{
+  float: left;
+}
+.pointsfield{
+  display: block;
+  padding: 0px 4px 0px 6px;
+
+}
+#attri{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.boxx{
+  flex-grow: 1;
+  display: inline-block;
+  width: 27%;
+}
