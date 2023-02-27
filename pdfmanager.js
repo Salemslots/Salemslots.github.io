@@ -1,3 +1,4 @@
+const { PDFDocument, StandardFonts, rgb } = PDFLib
 
 function fillbox (boxnumber, boxvalue, boxname){
     for (let step = 0; step < boxvalue; step++){
