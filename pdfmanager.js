@@ -1,5 +1,3 @@
-///import { PDFDocument } from './node_modules/pdf-lib/dist/pdf-lib.js';
-
 const { PDFDocument } = PDFLib
 
 async function fillForm(){
@@ -45,7 +43,7 @@ async function fillForm(){
 
     privirField.select(document.getElementById("privirt").innerText);
     creedField.select(document.getElementById('creeddrop').value);
-    staconField.select(document.getElementById('hustarcon').value);
+    staconField.select(document.getElementById('hustarcon').innerText);
 
 
     // Fill in Attributes
