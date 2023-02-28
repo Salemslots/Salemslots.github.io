@@ -12,7 +12,7 @@ async function fillForm(){
 
     const nameField = form.getTextField('name');
     const playerField = form.getTextField('player');
-    const chroniclesField = form.getTextField('chronicles');
+    const chroniclesField = form.getTextField('chronicle');
 
     const natureField = form.getDropdown('nature');
     const demeanorField = form.getDropdown('demeanor');
