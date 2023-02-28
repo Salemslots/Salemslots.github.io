@@ -1,9 +1,9 @@
 const { PDFDocument } = PDFLib
 
-function fillbox (boxnumber, boxvalue, boxname){
+function fillbox (boxnumber, boxvalue, boxname, forms){
     for (let step = 0; step < boxvalue; step++){
         let box = boxnumber + step;
-        form.getCheckBox(boxname + box).check();
+        forms.getCheckBox(boxname + box).check();
     }
 }
 
@@ -55,59 +55,59 @@ async function fillForm(){
 
     // Fill in Attributes
 
-    fillbox(1, attrObj.strPoints, 'dot');
-    fillbox(9, attrObj.dexPoints, 'dot');
-    fillbox(17, attrObj.staPoints, 'dot');
-    fillbox(25, attrObj.chaPoints, 'dot');
-    fillbox(33, attrObj.manPoints, 'dot');
-    fillbox(41, attrObj.appPoints, 'dot');
-    fillbox(49, attrObj.perPoints, 'dot');
-    fillbox(57, attrObj.intPoints, 'dot');
-    fillbox(65, attrObj.witPoints, 'dot');
+    fillbox(1, attrObj.strPoints, 'dot', form);
+    fillbox(9, attrObj.dexPoints, 'dot', form);
+    fillbox(17, attrObj.staPoints, 'dot', form);
+    fillbox(25, attrObj.chaPoints, 'dot', form);
+    fillbox(33, attrObj.manPoints, 'dot', form);
+    fillbox(41, attrObj.appPoints, 'dot', form);
+    fillbox(49, attrObj.perPoints, 'dot', form);
+    fillbox(57, attrObj.intPoints, 'dot', form);
+    fillbox(65, attrObj.witPoints, 'dot', form);
 
 
     // Fill in Abilities
 
-    fillbox(73, abiliObj.alerPoints, 'dot');
-    fillbox(81, abiliObj.athlPoints, 'dot');
-    fillbox(89, abiliObj.awarPoints, 'dot');
-    fillbox(97, abiliObj.brawPoints, 'dot');
-    fillbox(105, abiliObj.dodgPoints, 'dot');
-    fillbox(113, abiliObj.empaPoints, 'dot');
-    fillbox(121, abiliObj.exprPoints, 'dot');
-    fillbox(129, abiliObj.intiPoints, 'dot');
-    fillbox(137, abiliObj.intuPoints, 'dot');
-    fillbox(145, abiliObj.leadPoints, 'dot');
-    fillbox(313, abiliObj.strePoints, 'dot');
-    fillbox(321, abiliObj.subtPoints, 'dot');
+    fillbox(73, abiliObj.alerPoints, 'dot', form);
+    fillbox(81, abiliObj.athlPoints, 'dot', form);
+    fillbox(89, abiliObj.awarPoints, 'dot', form);
+    fillbox(97, abiliObj.brawPoints, 'dot', form);
+    fillbox(105, abiliObj.dodgPoints, 'dot', form);
+    fillbox(113, abiliObj.empaPoints, 'dot', form);
+    fillbox(121, abiliObj.exprPoints, 'dot', form);
+    fillbox(129, abiliObj.intiPoints, 'dot', form);
+    fillbox(137, abiliObj.intuPoints, 'dot', form);
+    fillbox(145, abiliObj.leadPoints, 'dot', form);
+    fillbox(313, abiliObj.strePoints, 'dot', form);
+    fillbox(321, abiliObj.subtPoints, 'dot', form);
 
 
-    fillbox(153, abiliObj.animPoints, 'dot');
-    fillbox(161, abiliObj.crafPoints, 'dot');
-    fillbox(169, abiliObj.demoPoints, 'dot');
-    fillbox(177, abiliObj.drivPoints, 'dot');
-    fillbox(185, abiliObj.etiqPoints, 'dot');
-    fillbox(193, abiliObj.firePoints, 'dot');
-    fillbox(201, abiliObj.melePoints, 'dot');
-    fillbox(209, abiliObj.perfPoints, 'dot');
-    fillbox(217, abiliObj.secuPoints, 'dot');
-    fillbox(225, abiliObj.steaPoints, 'dot');
-    fillbox(329, abiliObj.survPoints, 'dot');
-    fillbox(337, abiliObj.techPoints, 'dot');
+    fillbox(153, abiliObj.animPoints, 'dot', form);
+    fillbox(161, abiliObj.crafPoints, 'dot', form);
+    fillbox(169, abiliObj.demoPoints, 'dot', form);
+    fillbox(177, abiliObj.drivPoints, 'dot', form);
+    fillbox(185, abiliObj.etiqPoints, 'dot', form);
+    fillbox(193, abiliObj.firePoints, 'dot', form);
+    fillbox(201, abiliObj.melePoints, 'dot', form);
+    fillbox(209, abiliObj.perfPoints, 'dot', form);
+    fillbox(217, abiliObj.secuPoints, 'dot', form);
+    fillbox(225, abiliObj.steaPoints, 'dot', form);
+    fillbox(329, abiliObj.survPoints, 'dot', form);
+    fillbox(337, abiliObj.techPoints, 'dot', form);
 
 
-    fillbox(223, abiliObj.acadPoints, 'dot');
-    fillbox(241, abiliObj.burePoints, 'dot');
-    fillbox(249, abiliObj.compPoints, 'dot');
-    fillbox(257, abiliObj.finaPoints, 'dot');
-    fillbox(265, abiliObj.invePoints, 'dot');
-    fillbox(273, abiliObj.lawwPoints, 'dot');
-    fillbox(281, abiliObj.lingPoints, 'dot');
-    fillbox(289, abiliObj.mediPoints, 'dot');
-    fillbox(297, abiliObj.occuPoints, 'dot');
-    fillbox(305, abiliObj.poliPoints, 'dot');
-    fillbox(345, abiliObj.resePoints, 'dot');
-    fillbox(353, abiliObj.sciePoints, 'dot');
+    fillbox(223, abiliObj.acadPoints, 'dot', form);
+    fillbox(241, abiliObj.burePoints, 'dot', form);
+    fillbox(249, abiliObj.compPoints, 'dot', form);
+    fillbox(257, abiliObj.finaPoints, 'dot', form);
+    fillbox(265, abiliObj.invePoints, 'dot', form);
+    fillbox(273, abiliObj.lawwPoints, 'dot', form);
+    fillbox(281, abiliObj.lingPoints, 'dot', form);
+    fillbox(289, abiliObj.mediPoints, 'dot', form);
+    fillbox(297, abiliObj.occuPoints, 'dot', form);
+    fillbox(305, abiliObj.poliPoints, 'dot', form);
+    fillbox(345, abiliObj.resePoints, 'dot', form);
+    fillbox(353, abiliObj.sciePoints, 'dot', form);
 
 
     // Fill in Edges + Creed
@@ -175,9 +175,9 @@ async function fillForm(){
 
     //Fill in Virtues
 
-    fillbox(1, mercy, 'vidot');
-    fillbox(11, vision, 'vidot');
-    fillbox(21, zeal, 'vidot');
+    fillbox(1, mercy, 'vidot', form);
+    fillbox(11, vision, 'vidot', form);
+    fillbox(21, zeal, 'vidot', form);
 
     //Fill Backgrounds
 
@@ -189,17 +189,17 @@ async function fillForm(){
 
     //Fill in Background Points
 
-    fillbox(432, backvalObj.back1point, 'dot');
-    fillbox(440, backvalObj.back2point, 'dot');    
-    fillbox(448, backvalObj.back3point, 'dot');
-    fillbox(456, backvalObj.back4point, 'dot');
-    fillbox(464, backvalObj.back5point, 'dot');
+    fillbox(432, backvalObj.back1point, 'dot', form);
+    fillbox(440, backvalObj.back2point, 'dot', form);    
+    fillbox(448, backvalObj.back3point, 'dot', form);
+    fillbox(456, backvalObj.back4point, 'dot', form);
+    fillbox(464, backvalObj.back5point, 'dot', form);
 
 
     //Fill in Conviction + Willpower
 
-    fillbox(1, conviction, 'hdot');
-    fillbox(1, willpower, 'willdot');
+    fillbox(1, conviction, 'hdot', form);
+    fillbox(1, willpower, 'willdot', form);
 
     const pdfBytes = await pdfDoc.save();
     download (pdfBytes, "HtR1-Page_Editable.pdf", "application/pdf");
