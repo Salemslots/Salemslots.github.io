@@ -1,5 +1,12 @@
 const { PDFDocument } = PDFLib
 
+function fillbox (boxnumber, boxvalue, boxname){
+    for (let step = 0; step < boxvalue; step++){
+        let box = boxnumber + step;
+        form.getCheckBox(boxname + box).check();
+    }
+}
+
 async function fillForm(){
 
     const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
