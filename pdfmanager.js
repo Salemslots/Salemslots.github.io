@@ -43,7 +43,7 @@ async function fillForm(){
     demeanorField.select(document.getElementById("demeanordrop").value);
     conceptField.setText(document.getElementById("huconcept").value);
 
-    privirField.select(document.getElementById("privirt").value);
+    privirField.select(document.getElementById("privirt").innerText);
     creedField.select(document.getElementById('creeddrop').value);
     staconField.select(virtuevalueoverall);
 
