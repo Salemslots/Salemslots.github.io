@@ -34,8 +34,8 @@ async function fillForm(){
     const back5Field = form.getDropdown('back5');
 
     nameField.setText(document.getElementById('huname').value);
-    playerField.setText(document.getElementById('huplayer'));
-    chroniclesField.setText(document.getElementById('huchronicle'));
+    playerField.setText(document.getElementById('huplayer').value);
+    chroniclesField.setText(document.getElementById('huchronicle').value);
 
     natureField.setOptions(archetypes);
     natureField.select(document.getElementById("naturedrop").value);
