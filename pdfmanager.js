@@ -45,7 +45,7 @@ async function fillForm(){
 
     privirField.select(document.getElementById("privirt").innerText);
     creedField.select(document.getElementById('creeddrop').value);
-    staconField.select(virtuevalueoverall);
+    staconField.select(document.getElementById('hustarcon').value);
 
 
     // Fill in Attributes
