@@ -1,4 +1,6 @@
-import { PDFDocument } from './node_modules/pdf-lib/dist/pdf-lib.js';
+///import { PDFDocument } from './node_modules/pdf-lib/dist/pdf-lib.js';
+
+const { PDFDocument } = PDFLib
 
 async function fillForm(){
 
