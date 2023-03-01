@@ -96,7 +96,7 @@ async function fillForm(){
     fillbox(337, abiliObj.techPoints, 'dot', form);
 
 
-    fillbox(223, abiliObj.acadPoints, 'dot', form);
+    fillbox(233, abiliObj.acadPoints, 'dot', form);
     fillbox(241, abiliObj.burePoints, 'dot', form);
     fillbox(249, abiliObj.compPoints, 'dot', form);
     fillbox(257, abiliObj.finaPoints, 'dot', form);
