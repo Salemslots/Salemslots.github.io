@@ -52,7 +52,7 @@ async function fillForm(){
     creedField.select(document.getElementById('creeddrop').value);
     staconField.select(document.getElementById('hustarcon').innerText);
 
-
+    
     // Fill in Attributes
 
     fillbox(1, attrObj.strPoints, 'dot', form);
@@ -112,10 +112,8 @@ async function fillForm(){
 
     // Fill in Edges + Creed
 
-    edge1Field.setOptions(edgesFull);
-    edge2Field.setOptions(edgesFull);
-    edge1Field.select(document.getElementById("edgedrop1").value);
-    edge2Field.select(document.getElementById("edgedrop2").value);
+    edge1Field.select(edgechoice1);
+    edge2Field.select(edgechoice2);
 
     if ((document.getElementById("edgedrop1").value).includes("Innocence")){
         edge1creedField.select("Innocence");
@@ -172,6 +170,22 @@ async function fillForm(){
         edge2creedField.select("Vengence");
     }
 
+
+    // Fill in Edge Level
+
+    if (document.getElementById("edgedrop1").value.slice(-1) == 2){
+        fillbox(361, 2, 'dot', form);
+    }
+    else{
+        fillbox(361, 1, 'dot', form);
+    }
+    
+    if (document.getElementById("edgedrop2").value.slice(-1) == 2){
+        fillbox(369, 2, 'dot', form);
+    }
+    else{
+        fillbox(369, 1, 'dot', form);
+    }
 
     //Fill in Virtues
 

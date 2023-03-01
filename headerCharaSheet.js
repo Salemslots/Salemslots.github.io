@@ -90,6 +90,20 @@ document.getElementById('creeddrop').addEventListener('change', (event) => {
     }
 })
 
+document.getElementById('edgedrop1').addEventListener('change', (event) =>{
+    let chosenedge = event.target.id;
+    let edgevalue = document.getElementById(chosenedge).value;
+    let count = edges.indexOf(edgevalue);
+    edgechoice1 = edgeshort[count];
+})
+
+document.getElementById('edgedrop2').addEventListener('change', (event) =>{
+    let chosenedge = event.target.id;
+    let edgevalue = document.getElementById(chosenedge).value;
+    let count = edges.indexOf(edgevalue);
+    edgechoice2 = edgeshort[count];
+})
+
 virbutton.addEventListener('click', (e) => {
     let target = e.target;
     let isButton = target.id;

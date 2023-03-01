@@ -176,28 +176,16 @@ let edges = [
     "Discern - Judgement - 1", "Vigilance - Judgement - 1", "Burden - Judgement - 2", "Anathema - Judgement - 2", "View - Judgement - 2",
 ];
 
-let edgesFull = [
-    "--",
-    //      Innocent
-    "Fool's Luck - Innocence - 1", "Hide - Innocence - 1", "Illuminate - Innocence - 2", "Ease - Innocence - 2", "Conceal - Innocence - 2",
-    //      Martyr
-    "Demand - Marytrdom - 1", "Project - Marytrdom - 1", "Witness - Marytrdom - 2", "Revelation - Marytrdom - 2",
-    //      Redeemer
-    "Bluster - Redemption - 1", "Outreach - Redemption - 1", "Insinuate - Redemption - 2", "Insight - Redemption - 2",
-    //      Visionary
-    "Foresee - Vision - 1", "Focus - Vision - 1", "Pinpoint - Vision - 2", "Summon - Vision - 2", "Return - Vision - 2",
-    //      Hermit
-    "Foresee - Solitude - 1", "Send - Solitude - 2",
-    //      Wayward
-    "Impart - Deviance - 1", "Forewarn - Deviance - 2",
-    //      Avenger
-    "Cleave - Vengence - 1", "Impact - Vengence - 1", "Wardance - Vengence - 1", "Track - Vengence - 2", "Muse of Flame - Vengence - 2",
-    //      Defender
-    "Ward - Defense - 1", "Alarm - Defense - 1", "Rejuvenate - Defense - 2", "Lock - Defense - 2",
-    //      Judge
-    "Discern - Judgement - 1", "Vigilance - Judgement - 1", "Burden - Judgement - 2", "Anathema - Judgement - 2", "View - Judgement - 2",
-
+let edgeshort = [
+    "Fool's Luck", "Hide", "Illuminate", "Ease", "Conceal", "Demand", "Project", "Witness", "Revelation",
+    "Bluster", "Outreach", "Insinuate", "Insight", "Foresee", "Focus", "Pinpoint", "Summon", "Return",
+    "Foresee", "Send", "Impart", "Forewarn", "Cleave", "Impact", "Wardance", "Track", "Muse of Flame",
+    "Ward", "Alarm", "Rejuvenate", "Lock",
+    "Discern", "Vigilance", "Burden", "Anathema", "View",
 ]
+
+let edgechoice1;
+let edgechoice2;
 
 let background = ['    ', 'Allies', 'Arseneal', 'Bystander', 'Contacts', 'Destiny', 'Exposure', 'Fame', 'Influence', 'Mentor', 'Patron', 'Ressources'];
 
