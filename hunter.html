@@ -12,11 +12,21 @@
   <script src="attributes.js" defer></script>
   <script src="abilities.js" defer></script>
   <script type="module" src="pdfmanager.js" defer></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
   <title>Hunter the Reckoning Character Creator</title>
 </head>
 
 <body onload="fillwebsite(),resetallatt(),resetallabi()">
 
+
+  <ul id="navbar"> 
+    <li><a class="active" href="index.html"> Main </a></li>
+    <li><a href="hunter.html"> Hunter Character Creator</a></li>
+    <li><a href="hunterfree.html">free Mode Hunter Character Creator</a></li>
+    <li><a href="credits.html">Credits</a></li>
+</ul>
+
+<div id="creatorbody">
   <h1>HUNTER THE RECKONING</h1>
   <h2>Character Creator</h2>
 
@@ -47,7 +57,6 @@
     </tr>
   </table>
 
-  <hr>
   <h2>Attributes</h2>
   <div id="attri">
     <table>
@@ -149,7 +158,6 @@
     </table>
   </div>
 
-  <hr>
   <h2>Abilities</h2>
   <div id="abili">
     <table>
@@ -410,7 +418,6 @@
       </td>
     </table>
   </div>
-  <hr>
   <h2>Advantages</h2>
 
   <h3>Edges</h3>
@@ -443,8 +450,6 @@
       </tr>
     </table>
   </div>
-
-  <hr>
 
   <h3>Backgrounds</h3>
   <div id="backgrounds">
@@ -499,7 +504,6 @@
       </tr>
     </table>
 
-  <hr>
 
   <button id="freebies">Use Freebies</button>
   <div>
@@ -509,6 +513,9 @@
 
 
   <button id="getpdfbutton">GET PDF</button>
+
+
+</div>
 </body>
 
 </html>
