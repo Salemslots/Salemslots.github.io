@@ -19,503 +19,534 @@
 <body onload="fillwebsite(),resetallatt(),resetallabi()">
 
 
-  <ul id="navbar"> 
+  <ul id="navbar">
     <li><a class="active" href="index.html"> Main </a></li>
     <li><a href="hunter.html"> Hunter Character Creator</a></li>
     <li><a href="hunterfree.html">free Mode Hunter Character Creator</a></li>
-    <li><a href="credits.html">Credits</a></li>
-</ul>
+    <li><a href="credits.html">Info</a></li>
+  </ul>
 
-<div id="creatorbody">
-  <h1>HUNTER THE RECKONING</h1>
-  <h2>Character Creator</h2>
-
-  <table>
-    <tr>
-      <td> <label for="Name">Name:</label></td>
-      <td><input id="huname" name="huname"></td>
-      <td> <label for="Nature">Nature:</label></td>
-      <td><select id="naturedrop"></select></td>
-      <td> <label for="Primary Virtue">Primary Virtue: </label></td>
-      <td><span id="privirt">--</span></td>
-    </tr>
-    <tr>
-      <td> <label for="Player">Player:</label></td>
-      <td> <input id="huplayer" name="player"></label> </td>
-      <td> <label for="Demeanor">Demeanor:</label></td>
-      <td> <select id="demeanordrop"></select></label> </td>
-      <td> <label for="Creed">Creed: </label></td>
-      <td> <select id="creeddrop"></select></label> </td>
-    </tr>
-    <tr>
-      <td> <label for="Chronicle">Chronicle:</label></td>
-      <td> <input id="huchronicle" name="chronicle"></label> </td>
-      <td> <label for="Concept">Concept:</label></td>
-      <td> <input id="huconcept" name="concept"></label> </td>
-      <td> <label for="Starting Conviction">Starting Conviction: </label></td>
-      <td><span id="hustarcon">--</span></label></td>
-    </tr>
-  </table>
-
-  <h2>Attributes</h2>
-  <div id="attri">
-    <table>
-      <td>
-        <h3>Physical</h3>
-        <select class="phyprio" name="phyprio">
-          <option value="0" selected>select one</option>
-          <option value="6">primary</option>
-          <option value="4">secondary</option>
-          <option value="3">tertiary</option>
-        </select>
-        <div id="phytext"></div>
-
-        <table>
-          <tr>
-            <td>Strength</td>
-            <td><button id="strp+">+</button></td>
-            <td><span class="pointsfield" id="strpo">1</span></td>
-            <td><button id="strp-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Dexterity</td>
-            <td><button id="dexp+">+</button></td>
-            <td><span class="pointsfield" id="dexpo">1</span></td>
-            <td><button id="dexp-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Stamina</td>
-            <td><button id="stap+">+</button></td>
-            <td><span class="pointsfield" id="stapo">1</span></td>
-            <td><button id="stap-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-
-      <td>
-        <h3>Social</h3>
-        <select class="socprio" name="socprio">
-          <option value="0" selected>select one</option>
-          <option value="6">primary</option>
-          <option value="4">secondary</option>
-          <option value="3">tertiary</option>
-        </select>
-        <div id="soctext"></div>
-
-        <table>
-          <tr>
-            <td>Charisma</td>
-            <td><button id="chas+">+</button></td>
-            <td><span class="pointsfield" id="chapo">1</span></td>
-            <td><button id="chas-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Manipulation</td>
-            <td><button id="mans+">+</button></td>
-            <td><span class="pointsfield" id="manpo">1</span></td>
-            <td><button id="mans-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Appearance</td>
-            <td><button id="apps+">+</button></td>
-            <td><span class="pointsfield" id="apppo">1</span></td>
-            <td><button id="apps-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-
-      <td>
-        <h3>Mental</h3>
-        <select class="menprio" name="menprio">
-          <option value="0" selected>select one</option>
-          <option value="6">primary</option>
-          <option value="4">secondary</option>
-          <option value="3">tertiary</option>
-        </select>
-        <div id="mentext"></div>
-
-        <table>
-          <tr>
-            <td>Perception</td>
-            <td><button id="perm+">+</button></td>
-            <td><span class="pointsfield" id="perpo">1</span></td>
-            <td><button id="perm-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Intelligence</td>
-            <td><button id="intm+">+</button></td>
-            <td><span class="pointsfield" id="intpo">1</span></td>
-            <td><button id="intm-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Wits</td>
-            <td><button id="witm+">+</button></td>
-            <td><span class="pointsfield" id="witpo">1</span></td>
-            <td><button id="witm-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-    </table>
-  </div>
-
-  <h2>Abilities</h2>
-  <div id="abili">
-    <table>
-      <td>
-        <h3>Talents</h3>
-        <select class="talentsPrio" name="talentsPrio">
-          <option value="0" selected>select one</option>
-          <option value="11">primary</option>
-          <option value="7">secondary</option>
-          <option value="4">tertiary</option>
-        </select>
-        <div id="taltext"></div>
-        <table>
-          <tr>
-            <td>Alertness</td>
-            <td><button id="alert+">+</button></td>
-            <td><span class="pointsfield" id="alerpo">0</span></td>
-            <td><button id="alert-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Athletics</td>
-            <td><button id="athlt+">+</button></td>
-            <td><span class="pointsfield" id="athlpo">0</span></td>
-            <td><button id="athlt-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Awareness</td>
-            <td><button id="awart+">+</button></td>
-            <td><span class="pointsfield" id="awarpo">0</span></td>
-            <td><button id="awart-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Brawl</td>
-            <td><button id="brawt+">+</button></td>
-            <td><span class="pointsfield" id="brawpo">0</span></td>
-            <td><button id="brawt-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Dodge</td>
-            <td><button id="dodgt+">+</button></td>
-            <td><span class="pointsfield" id="dodgpo">0</span></td>
-            <td><button id="dodgt-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Empathy</td>
-            <td><button id="empat+">+</button></td>
-            <td><span class="pointsfield" id="empapo">0</span></td>
-            <td><button id="empat-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Expression</td>
-            <td><button id="exprt+">+</button></td>
-            <td><span class="pointsfield" id="exprpo">0</span></td>
-            <td><button id="exprt-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Intimidation</td>
-            <td><button id="intit+">+</button></td>
-            <td><span class="pointsfield" id="intipo">0</span></td>
-            <td><button id="intit-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Intuition</td>
-            <td><button id="intut+">+</button></td>
-            <td><span class="pointsfield" id="intupo">0</span></td>
-            <td><button id="intut-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Leadership</td>
-            <td><button id="leadt+">+</button></td>
-            <td><span class="pointsfield" id="leadpo">0</span></td>
-            <td><button id="leadt-">-</button></label><br></td>
-          </tr>
-          <td>Streetwise</td>
-          <td><button id="stret+">+</button></td>
-          <td><span class="pointsfield" id="strepo">0</span></td>
-          <td><button id="stret-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Subterfuge</td>
-            <td><button id="subtt+">+</button></td>
-            <td><span class="pointsfield" id="subtpo">0</span></td>
-            <td><button id="subtt-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-
-      <td>
-        <h3>Skills</h3>
-        <select class="skillPrio" name="skillprio">
-          <option value="0" selected>select one</option>
-          <option value="11">primary</option>
-          <option value="7">secondary</option>
-          <option value="5">tertiary</option>
-        </select>
-        <div id="skilltext"></div>
-
-        <table>
-          <tr>
-            <td>Animal Ken</td>
-            <td><button id="anims+">+</button></td>
-            <td><span class="pointsfield" id="animpo">0</span></td>
-            <td><button id="anims-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Crafts</td>
-            <td><button id="crafs+">+</button></td>
-            <td><span class="pointsfield" id="crafpo">0</span></td>
-            <td><button id="crafs-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Demolitions</td>
-            <td><button id="demos+">+</button></td>
-            <td><span class="pointsfield" id="demopo">0</span></td>
-            <td><button id="demos-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Drive</td>
-            <td><button id="drivs+">+</button></td>
-            <td><span class="pointsfield" id="drivpo">0</span></td>
-            <td><button id="drivs-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Etiquette</td>
-            <td><button id="etiqs+">+</button></td>
-            <td><span class="pointsfield" id="etiqpo">0</span></td>
-            <td><button id="etiqs-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Firearms</td>
-            <td><button id="fires+">+</button></td>
-            <td><span class="pointsfield" id="firepo">0</span></td>
-            <td><button id="fires-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Melee</td>
-            <td><button id="meles+">+</button></td>
-            <td><span class="pointsfield" id="melepo">0</span></td>
-            <td><button id="meles-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Performance</td>
-            <td><button id="perfs+">+</button></td>
-            <td><span class="pointsfield" id="perfpo">0</span></td>
-            <td><button id="perfs-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Security</td>
-            <td><button id="secus+">+</button></td>
-            <td><span class="pointsfield" id="secupo">0</span></td>
-            <td><button id="secus-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Stealth</td>
-            <td><button id="steas+">+</button></td>
-            <td><span class="pointsfield" id="steapo">0</span></td>
-            <td><button id="steas-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Survival</td>
-            <td><button id="survs+">+</button></td>
-            <td><span class="pointsfield" id="survpo">0</span></td>
-            <td><button id="survs-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Technology</td>
-            <td><button id="techs+">+</button></td>
-            <td><span class="pointsfield" id="techpo">0</span></td>
-            <td><button id="techs-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-
-      <td>
-        <h3>Knowledge</h3>
-        <select class="knowPrio" name="knowprio">
-          <option value="0" selected>select one</option>
-          <option value="11">primary</option>
-          <option value="7">secondary</option>
-          <option value="5">tertiary</option>
-        </select>
-        <div id="knowtext"></div>
-
-        <table>
-          <tr>
-            <td>Academics</td>
-            <td><button id="acadk+">+</button></td>
-            <td><span class="pointsfield" id="acadpo">0</span></td>
-            <td><button id="acadk-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Bureaucracy</td>
-            <td><button id="burek+">+</button></td>
-            <td><span class="pointsfield" id="burepo">0</span></td>
-            <td><button id="burek-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Computer</td>
-            <td><button id="compk+">+</button></td>
-            <td><span class="pointsfield" id="comppo">0</span></td>
-            <td><button id="compk-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Finance</td>
-            <td><button id="finak+">+</button></td>
-            <td><span class="pointsfield" id="finapo">0</span></td>
-            <td><button id="finak-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Investigation</td>
-            <td><button id="invek+">+</button></td>
-            <td><span class="pointsfield" id="invepo">0</span></td>
-            <td><button id="invek-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Law</td>
-            <td><button id="lawwk+">+</button></td>
-            <td><span class="pointsfield" id="lawwpo">0</span></td>
-            <td><button id="lawwk-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Linguistics</td>
-            <td><button id="lingk+">+</button></td>
-            <td><span class="pointsfield" id="lingpo">0</span></td>
-            <td><button id="lingk-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Medicine</td>
-            <td><button id="medik+">+</button></td>
-            <td><span class="pointsfield" id="medipo">0</span></td>
-            <td><button id="medik-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Occult</td>
-            <td><button id="occuk+">+</button></td>
-            <td><span class="pointsfield" id="occupo">0</span></td>
-            <td><button id="occuk-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Politics</td>
-            <td><button id="polik+">+</button></td>
-            <td><span class="pointsfield" id="polipo">0</span></td>
-            <td><button id="polik-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Research</td>
-            <td><button id="resek+">+</button></td>
-            <td><span class="pointsfield" id="resepo">0</span></td>
-            <td><button id="resek-">-</button></label><br></td>
-          </tr>
-          <tr>
-            <td>Science</td>
-            <td><button id="sciek+">+</button></td>
-            <td><span class="pointsfield" id="sciepo">0</span></td>
-            <td><button id="sciek-">-</button></label><br></td>
-          </tr>
-        </table>
-      </td>
-    </table>
-  </div>
-  <h2>Advantages</h2>
-
-  <h3>Edges</h3>
-  <div id="edgee">
-    <label for="edgefill1"><select id="edgedrop1"></select></label>
-    <label for="edgefill2"><select id="edgedrop2"></select></label>
-  </div>
-
-  <h3>Virtues</h3>
-  <div id="virtues">
-    <div id="virtuetext">4</div>
-    <table>
+  <div id="creatorbody">
+    <h1>HUNTER THE RECKONING</h1>
+    <h2>Character Creator</h2>
+    <table class="full">
       <tr>
-        <td>Mercy</td>
-        <td><button id="mercy+">+</button></td>
-        <td><span class="pointsfield" id="mercypo">0</span></td>
-        <td><button id="mercy-">-</button></label><br></td>
+        <td><label for="Name">Name:</label></td>
+        <td><input id="huname" name="huname"></td>
+        <td><label for="Nature">Nature:</label></td>
+        <td><select id="naturedrop"></select></td>
+        <td><label for="Primary Virtue">Primary Virtue: </label></td>
+        <td><span id="privirt">--</span></td>
       </tr>
       <tr>
-        <td>Vision</td>
-        <td><button id="vision+">+</button></td>
-        <td><span class="pointsfield" id="visionpo">0</span></td>
-        <td><button id="vision-">-</button></label><br></td>
+        <td> <label for="Player">Player:</label></td>
+        <td> <input id="huplayer" name="player"></label> </td>
+        <td> <label for="Demeanor">Demeanor:</label></td>
+        <td> <select id="demeanordrop"></select></label> </td>
+        <td> <label for="Creed">Creed: </label></td>
+        <td> <select id="creeddrop"></select></label> </td>
       </tr>
       <tr>
-        <td>Zeal</td>
-        <td><button id="zeal+">+</button></td>
-        <td><span class="pointsfield" id="zealpo">0</span></td>
-        <td><button id="zeal-">-</button></label><br></td>
-      </tr>
-    </table>
-  </div>
-
-  <h3>Backgrounds</h3>
-  <div id="backgrounds">
-    <div id="backtext">5</div>
-    <table>
-      <tr>
-        <td><select id="back1" name="background"></select></td>
-        <td><button id="back1+">+</button></td>
-        <td><span class="pointsfield" id="back1po">0</span></td>
-        <td><button id="back1-">-</button></label><br></td>
-      </tr>
-      <tr>
-        <td><select id="back2" name="background"></select></td>
-        <td><button id="back2+">+</button></td>
-        <td><span class="pointsfield" id="back2po">0</span></td>
-        <td><button id="back2-">-</button></label><br></td>
-      </tr>
-      <tr>
-        <td><select id="back3" name="background"></select></td>
-        <td><button id="back3+">+</button></td>
-        <td><span class="pointsfield" id="back3po">0</span></td>
-        <td><button id="back3-">-</button></label><br></td>
-      </tr>
-      <tr>
-        <td><select id="back4" name="background"></select></td>
-        <td><button id="back4+">+</button></td>
-        <td><span class="pointsfield" id="back4po">0</span></td>
-        <td><button id="back4-">-</button></label><br></td>
-      </tr>
-      <tr>
-        <td><select id="back5" name="background"></select></td>
-        <td><button id="back5+">+</button></td>
-        <td><span class="pointsfield" id="back5po">0</span></td>
-        <td><button id="back5-">-</button></label><br></td>
-      </tr>
-    </table>
-  </div>
-
-<h3>Conviction and Willpower</h3>
-    <table id="willcon">
-      <tr>
-        <td>Conviction</td>
-        <td><button id="convi+">+</button></td>
-        <td><div id="convi">--</div></td>
-        <td><button id="convi-">-</button></td>
-      </tr>
-      <tr>
-        <td>Willpower</td>
-        <td><button id="willp+">+</button></td>
-        <td><div id="willp">3</div></td>
-        <td><button id="willp-">-</button></td>
+        <td> <label for="Chronicle">Chronicle:</label></td>
+        <td> <input id="huchronicle" name="chronicle"></label> </td>
+        <td> <label for="Concept">Concept:</label></td>
+        <td> <input id="huconcept" name="concept"></label> </td>
+        <td> <label for="Starting Conviction">Starting Conviction: </label></td>
+        <td><span id="hustarcon">--</span></label></td>
       </tr>
     </table>
 
+    <h2>Attributes</h2>
+    <div id="attri">
+      <table class="full">
+        <td>
+          <h3>Physical</h3>
+          <select class="phyprio" name="phyprio">
+            <option value="0" selected>select one</option>
+            <option value="6">primary</option>
+            <option value="4">secondary</option>
+            <option value="3">tertiary</option>
+          </select>
+          <div id="phytext"></div>
 
-  <button id="freebies">Use Freebies</button>
-  <div>
-    <p>Remaining freebies: <span id="freebiecount">21</span></p>
+          <table class="third">
+            <tr>
+              <td>Strength</td>
+              <td><button id="strp+">+</button></td>
+              <td><span class="pointsfield" id="strpo">1</span></td>
+              <td><button id="strp-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Dexterity</td>
+              <td><button id="dexp+">+</button></td>
+              <td><span class="pointsfield" id="dexpo">1</span></td>
+              <td><button id="dexp-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Stamina</td>
+              <td><button id="stap+">+</button></td>
+              <td><span class="pointsfield" id="stapo">1</span></td>
+              <td><button id="stap-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <h3>Social</h3>
+          <select class="socprio" name="socprio">
+            <option value="0" selected>select one</option>
+            <option value="6">primary</option>
+            <option value="4">secondary</option>
+            <option value="3">tertiary</option>
+          </select>
+          <div id="soctext"></div>
+
+          <table class="third">
+            <tr>
+              <td>Charisma</td>
+              <td><button id="chas+">+</button></td>
+              <td><span class="pointsfield" id="chapo">1</span></td>
+              <td><button id="chas-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Manipulation</td>
+              <td><button id="mans+">+</button></td>
+              <td><span class="pointsfield" id="manpo">1</span></td>
+              <td><button id="mans-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Appearance</td>
+              <td><button id="apps+">+</button></td>
+              <td><span class="pointsfield" id="apppo">1</span></td>
+              <td><button id="apps-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <h3>Mental</h3>
+          <select class="menprio" name="menprio">
+            <option value="0" selected>select one</option>
+            <option value="6">primary</option>
+            <option value="4">secondary</option>
+            <option value="3">tertiary</option>
+          </select>
+          <div id="mentext"></div>
+
+          <table class="third">
+            <tr>
+              <td>Perception</td>
+              <td><button id="perm+">+</button></td>
+              <td><span class="pointsfield" id="perpo">1</span></td>
+              <td><button id="perm-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Intelligence</td>
+              <td><button id="intm+">+</button></td>
+              <td><span class="pointsfield" id="intpo">1</span></td>
+              <td><button id="intm-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Wits</td>
+              <td><button id="witm+">+</button></td>
+              <td><span class="pointsfield" id="witpo">1</span></td>
+              <td><button id="witm-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+      </table>
+    </div>
+
+    <h2>Abilities</h2>
+    <div id="abili">
+      <table class="full">
+        <td>
+          <h3>Talents</h3>
+          <select class="talentsPrio" name="talentsPrio">
+            <option value="0" selected>select one</option>
+            <option value="11">primary</option>
+            <option value="7">secondary</option>
+            <option value="4">tertiary</option>
+          </select>
+          <div id="taltext"></div>
+          <table class="third">
+            <tr>
+              <td>Alertness</td>
+              <td><button id="alert+">+</button></td>
+              <td><span class="pointsfield" id="alerpo">0</span></td>
+              <td><button id="alert-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Athletics</td>
+              <td><button id="athlt+">+</button></td>
+              <td><span class="pointsfield" id="athlpo">0</span></td>
+              <td><button id="athlt-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Awareness</td>
+              <td><button id="awart+">+</button></td>
+              <td><span class="pointsfield" id="awarpo">0</span></td>
+              <td><button id="awart-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Brawl</td>
+              <td><button id="brawt+">+</button></td>
+              <td><span class="pointsfield" id="brawpo">0</span></td>
+              <td><button id="brawt-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Dodge</td>
+              <td><button id="dodgt+">+</button></td>
+              <td><span class="pointsfield" id="dodgpo">0</span></td>
+              <td><button id="dodgt-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Empathy</td>
+              <td><button id="empat+">+</button></td>
+              <td><span class="pointsfield" id="empapo">0</span></td>
+              <td><button id="empat-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Expression</td>
+              <td><button id="exprt+">+</button></td>
+              <td><span class="pointsfield" id="exprpo">0</span></td>
+              <td><button id="exprt-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Intimidation</td>
+              <td><button id="intit+">+</button></td>
+              <td><span class="pointsfield" id="intipo">0</span></td>
+              <td><button id="intit-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Intuition</td>
+              <td><button id="intut+">+</button></td>
+              <td><span class="pointsfield" id="intupo">0</span></td>
+              <td><button id="intut-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Leadership</td>
+              <td><button id="leadt+">+</button></td>
+              <td><span class="pointsfield" id="leadpo">0</span></td>
+              <td><button id="leadt-">-</button></label><br></td>
+            </tr>
+            <td>Streetwise</td>
+            <td><button id="stret+">+</button></td>
+            <td><span class="pointsfield" id="strepo">0</span></td>
+            <td><button id="stret-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Subterfuge</td>
+              <td><button id="subtt+">+</button></td>
+              <td><span class="pointsfield" id="subtpo">0</span></td>
+              <td><button id="subtt-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <h3>Skills</h3>
+          <select class="skillPrio" name="skillprio">
+            <option value="0" selected>select one</option>
+            <option value="11">primary</option>
+            <option value="7">secondary</option>
+            <option value="5">tertiary</option>
+          </select>
+          <div id="skilltext"></div>
+
+          <table class="third">
+            <tr>
+              <td>Animal Ken</td>
+              <td><button id="anims+">+</button></td>
+              <td><span class="pointsfield" id="animpo">0</span></td>
+              <td><button id="anims-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Crafts</td>
+              <td><button id="crafs+">+</button></td>
+              <td><span class="pointsfield" id="crafpo">0</span></td>
+              <td><button id="crafs-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Demolitions</td>
+              <td><button id="demos+">+</button></td>
+              <td><span class="pointsfield" id="demopo">0</span></td>
+              <td><button id="demos-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Drive</td>
+              <td><button id="drivs+">+</button></td>
+              <td><span class="pointsfield" id="drivpo">0</span></td>
+              <td><button id="drivs-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Etiquette</td>
+              <td><button id="etiqs+">+</button></td>
+              <td><span class="pointsfield" id="etiqpo">0</span></td>
+              <td><button id="etiqs-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Firearms</td>
+              <td><button id="fires+">+</button></td>
+              <td><span class="pointsfield" id="firepo">0</span></td>
+              <td><button id="fires-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Melee</td>
+              <td><button id="meles+">+</button></td>
+              <td><span class="pointsfield" id="melepo">0</span></td>
+              <td><button id="meles-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Performance</td>
+              <td><button id="perfs+">+</button></td>
+              <td><span class="pointsfield" id="perfpo">0</span></td>
+              <td><button id="perfs-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Security</td>
+              <td><button id="secus+">+</button></td>
+              <td><span class="pointsfield" id="secupo">0</span></td>
+              <td><button id="secus-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Stealth</td>
+              <td><button id="steas+">+</button></td>
+              <td><span class="pointsfield" id="steapo">0</span></td>
+              <td><button id="steas-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Survival</td>
+              <td><button id="survs+">+</button></td>
+              <td><span class="pointsfield" id="survpo">0</span></td>
+              <td><button id="survs-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td><button id="techs+">+</button></td>
+              <td><span class="pointsfield" id="techpo">0</span></td>
+              <td><button id="techs-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <h3>Knowledge</h3>
+          <select class="knowPrio" name="knowprio">
+            <option value="0" selected>select one</option>
+            <option value="11">primary</option>
+            <option value="7">secondary</option>
+            <option value="5">tertiary</option>
+          </select>
+          <div id="knowtext"></div>
+
+          <table class="third">
+            <tr>
+              <td>Academics</td>
+              <td><button id="acadk+">+</button></td>
+              <td><span class="pointsfield" id="acadpo">0</span></td>
+              <td><button id="acadk-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Bureaucracy</td>
+              <td><button id="burek+">+</button></td>
+              <td><span class="pointsfield" id="burepo">0</span></td>
+              <td><button id="burek-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Computer</td>
+              <td><button id="compk+">+</button></td>
+              <td><span class="pointsfield" id="comppo">0</span></td>
+              <td><button id="compk-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Finance</td>
+              <td><button id="finak+">+</button></td>
+              <td><span class="pointsfield" id="finapo">0</span></td>
+              <td><button id="finak-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Investigation</td>
+              <td><button id="invek+">+</button></td>
+              <td><span class="pointsfield" id="invepo">0</span></td>
+              <td><button id="invek-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Law</td>
+              <td><button id="lawwk+">+</button></td>
+              <td><span class="pointsfield" id="lawwpo">0</span></td>
+              <td><button id="lawwk-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Linguistics</td>
+              <td><button id="lingk+">+</button></td>
+              <td><span class="pointsfield" id="lingpo">0</span></td>
+              <td><button id="lingk-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Medicine</td>
+              <td><button id="medik+">+</button></td>
+              <td><span class="pointsfield" id="medipo">0</span></td>
+              <td><button id="medik-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Occult</td>
+              <td><button id="occuk+">+</button></td>
+              <td><span class="pointsfield" id="occupo">0</span></td>
+              <td><button id="occuk-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Politics</td>
+              <td><button id="polik+">+</button></td>
+              <td><span class="pointsfield" id="polipo">0</span></td>
+              <td><button id="polik-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Research</td>
+              <td><button id="resek+">+</button></td>
+              <td><span class="pointsfield" id="resepo">0</span></td>
+              <td><button id="resek-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td><button id="sciek+">+</button></td>
+              <td><span class="pointsfield" id="sciepo">0</span></td>
+              <td><button id="sciek-">-</button></label><br></td>
+            </tr>
+          </table>
+        </td>
+      </table>
+    </div>
+    <h2>Advantages</h2>
+
+    <h3>Edges</h3>
+    <div id="edgee">
+      <label for="edgefill1"><select id="edgedrop1"></select></label>
+      <label for="edgefill2"><select id="edgedrop2"></select></label>
+    </div>
+
+    <br>
+
+    <table class="full">
+      <tr>
+        <td>
+          <h3>Virtue</h3>
+        </td>
+        <td>
+          <h3>Backgrounds</h3>
+        </td>
+        <td>
+          <h3>Conviction & Willpower</h3>
+        </td>
+      </tr>
+
+      <tr> 
+        <td>
+          <div id="virtuetext">4</div>
+        </td>
+        <td>
+          <div id="backtext">5</div>
+        </td>
+        <td>
+        </td>
+      </tr>
+
+      <td>
+        <div id="virtues">
+          <table class="third">
+            <tr>
+              <td>Mercy</td>
+              <td><button id="mercy+">+</button></td>
+              <td><span class="pointsfield" id="mercypo">0</span></td>
+              <td><button id="mercy-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Vision</td>
+              <td><button id="vision+">+</button></td>
+              <td><span class="pointsfield" id="visionpo">0</span></td>
+              <td><button id="vision-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td>Zeal</td>
+              <td><button id="zeal+">+</button></td>
+              <td><span class="pointsfield" id="zealpo">0</span></td>
+              <td><button id="zeal-">-</button></label><br></td>
+            </tr>
+          </table>
+        </div>
+
+      </td>
+      <td>
+        <div id="backgrounds">
+          <table class="third">
+            <tr>
+              <td><select id="back1" name="background"></select></td>
+              <td><button id="back1+">+</button></td>
+              <td><span class="pointsfield" id="back1po">0</span></td>
+              <td><button id="back1-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td><select id="back2" name="background"></select></td>
+              <td><button id="back2+">+</button></td>
+              <td><span class="pointsfield" id="back2po">0</span></td>
+              <td><button id="back2-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td><select id="back3" name="background"></select></td>
+              <td><button id="back3+">+</button></td>
+              <td><span class="pointsfield" id="back3po">0</span></td>
+              <td><button id="back3-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td><select id="back4" name="background"></select></td>
+              <td><button id="back4+">+</button></td>
+              <td><span class="pointsfield" id="back4po">0</span></td>
+              <td><button id="back4-">-</button></label><br></td>
+            </tr>
+            <tr>
+              <td><select id="back5" name="background"></select></td>
+              <td><button id="back5+">+</button></td>
+              <td><span class="pointsfield" id="back5po">0</span></td>
+              <td><button id="back5-">-</button></label><br></td>
+            </tr>
+          </table>
+        </div>
+
+      </td>
+      <td>
+        <table id="willcon" class="third">
+          <tr>
+            <td>Conviction</td>
+            <td><button id="convi+">+</button></td>
+            <td>
+              <div id="convi">--</div>
+            </td>
+            <td><button id="convi-">-</button></td>
+          </tr>
+          <tr>
+            <td>Willpower</td>
+            <td><button id="willp+">+</button></td>
+            <td>
+              <div id="willp">3</div>
+            </td>
+            <td><button id="willp-">-</button></td>
+          </tr>
+        </table>
+      </td>
+
+      </table>
+      </br>
+      <button id="freebies">Use Freebies</button>
+      <div>
+        <p>Remaining freebies: <span id="freebiecount">21</span></p>
+      </div>
+
+
+
+      <button id="getpdfbutton">GET PDF</button>
+
+
   </div>
-
-
-
-  <button id="getpdfbutton">GET PDF</button>
-
-
-</div>
 </body>
 
 </html>

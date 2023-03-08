@@ -1,5 +1,10 @@
 body{
   margin: 0;
+  font-size: large;
+}
+
+table{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 ul {
@@ -33,4 +38,36 @@ li a:hover {
 
   max-width: 960px;
   margin: auto;
+}
+
+.row{
+  content: "";
+  display: flex;
+  justify-content: space-between;
+
+}
+
+table{
+  width: 100%;
+}
+
+.full{
+  table-layout: fixed;
+}
+
+.third{
+  table-layout: auto;
+}
+
+.third td{
+  align-items: start;
+
+}
+
+.third td:nth-child(4){
+  float: right;
+}
+
+.third td:nth-child(3){
+  text-align: center;
 }
