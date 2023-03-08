@@ -3,7 +3,6 @@ body{
   font-size: large;
 }
 
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,9 +33,7 @@ li a:hover {
 #creatorbody{
   margin: auto;
   padding: 12px;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: thin;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   max-width: 960px;
 }
 
@@ -71,4 +68,9 @@ table{
 
 .third td:nth-child(3){
   text-align: center;
+}
+
+h3{
+  display: inline-block;
+  padding-right: 5px;
 }
