@@ -7,7 +7,7 @@ function fillbox (boxnumber, boxvalue, boxname, forms){
     }
 }
 
-async function fillForm(){
+async function fillForm2(){
 
     const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
     const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
@@ -221,5 +221,5 @@ async function fillForm(){
 }
 
 
-document.getElementById("getpdfbutton2").addEventListener('click', fillForm())
+document.getElementById("getpdfbutton2").addEventListener('click', fillForm2())
 
