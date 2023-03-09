@@ -1,3 +1,131 @@
+capbutton.addEventListener('click', (e) => {
+    let isButton = e.target.id;
+    let isButtonPoints = isButton.slice(0, 3) + 'Points';
+    let isButtontext = isButton.slice(0, 3) + 'po';
+
+        if (isButton.slice(-1) == '+'  && attrObj[isButtonPoints] < 5) {
+            attrObj[isButtonPoints]++;
+            document.getElementById(isButtontext).innerText = attrObj[isButtonPoints];
+        }
+        if (isButton.slice(-1) == '-' && attrObj[isButtonPoints] > 1) {
+            attrObj[isButtonPoints]--;
+            document.getElementById(isButtontext).innerText = attrObj[isButtonPoints];
+        }
+
+});
+
+capbutton2.addEventListener('click', (e) => {
+    let isButton = e.target.id;
+    let isButtonPoints = isButton.slice(0, 4) + 'Points';
+    let isButtontext = isButton.slice(0, 4) + 'po';
+
+        if (isButton.slice(-1) == '+' && abiliObj[isButtonPoints] < 5) {
+            abiliObj[isButtonPoints]++;
+            document.getElementById(isButtontext).innerText = abiliObj[isButtonPoints];
+        }
+        if (isButton.slice(-1) == '-' && abiliObj[isButtonPoints] > 0) {
+            abiliObj[isButtonPoints]--;
+            document.getElementById(isButtontext).innerText = abiliObj[isButtonPoints];
+        }
+
+});
+
+function resetfree (){
+    //resets attributes
+    attrObj.strPoints = 1;
+    document.getElementById("strpo").innerText = 1;
+    attrObj.dexPoints = 1;
+    document.getElementById("dexpo").innerText = 1;
+    attrObj.staPoints = 1;
+    document.getElementById("stapo").innerText = 1;
+    attrObj.chaPoints = 1;
+    document.getElementById("chapo").innerText = 1;
+    attrObj.manPoints = 1;
+    document.getElementById("manpo").innerText = 1;
+    attrObj.appPoints = 1;
+    document.getElementById("apppo").innerText = 1;
+    attrObj.perPoints = 1;
+    document.getElementById("perpo").innerText = 1;
+    attrObj.intPoints = 1;
+    document.getElementById("intpo").innerText = 1;
+    attrObj.witPoints = 1;
+    document.getElementById("witpo").innerText = 1;
+
+    //resets abilities
+    abiliObj.alerPoints = 0;
+    document.getElementById("alerpo").innerText = 0;
+    abiliObj.athlPoints = 0;
+    document.getElementById("athlpo").innerText = 0;
+    abiliObj.awarPoints = 0;
+    document.getElementById("awarpo").innerText = 0;
+    abiliObj.brawPoints = 0;
+    document.getElementById("brawpo").innerText = 0;
+    abiliObj.dodgPoints = 0;
+    document.getElementById("dodgpo").innerText = 0;
+    abiliObj.empaPoints = 0;
+    document.getElementById("empapo").innerText = 0;
+    abiliObj.exprPoints = 0;
+    document.getElementById("exprpo").innerText = 0;
+    abiliObj.intiPoints = 0;
+    document.getElementById("intipo").innerText = 0;
+    abiliObj.intuPoints = 0;
+    document.getElementById("intupo").innerText = 0;
+    abiliObj.leadPoints = 0;
+    document.getElementById("leadpo").innerText = 0;
+    abiliObj.strePoints = 0;
+    document.getElementById("strepo").innerText = 0;
+    abiliObj.subtPoints = 0;
+    document.getElementById("subtpo").innerText = 0;
+    abiliObj.animPoints = 0;
+    document.getElementById("animpo").innerText = 0;
+    abiliObj.crafPoints = 0;
+    document.getElementById("crafpo").innerText = 0;
+    abiliObj.demoPoints = 0;
+    document.getElementById("demopo").innerText = 0;
+    abiliObj.drivPoints = 0;
+    document.getElementById("drivpo").innerText = 0;
+    abiliObj.etiqPoints = 0;
+    document.getElementById("etiqpo").innerText = 0;
+    abiliObj.firePoints = 0;
+    document.getElementById("firepo").innerText = 0;
+    abiliObj.melePoints = 0;
+    document.getElementById("melepo").innerText = 0;
+    abiliObj.perfPoints = 0;
+    document.getElementById("perfpo").innerText = 0;
+    abiliObj.secuPoints = 0;
+    document.getElementById("secupo").innerText = 0;
+    abiliObj.steaPoints = 0;
+    document.getElementById("steapo").innerText = 0;
+    abiliObj.survPoints = 0;
+    document.getElementById("survpo").innerText = 0;
+    abiliObj.techPoints = 0;
+    document.getElementById("techpo").innerText = 0;
+    abiliObj.acadPoints = 0;
+    document.getElementById("acadpo").innerText = 0;
+    abiliObj.burePoints = 0;
+    document.getElementById("burepo").innerText = 0;
+    abiliObj.compPoints = 0;
+    document.getElementById("comppo").innerText = 0;
+    abiliObj.finaPoints = 0;
+    document.getElementById("finapo").innerText = 0;
+    abiliObj.invePoints = 0;
+    document.getElementById("invepo").innerText = 0;
+    abiliObj.lawPoints = 0;
+    document.getElementById("lawwpo").innerText = 0;
+    abiliObj.lingPoints = 0;
+    document.getElementById("lingpo").innerText = 0;
+    abiliObj.mediPoints = 0;
+    document.getElementById("medipo").innerText = 0;
+    abiliObj.occuPoints = 0;
+    document.getElementById("occupo").innerText = 0;
+    abiliObj.poliPoints = 0;
+    document.getElementById("polipo").innerText = 0;
+    abiliObj.resePoints = 0;
+    document.getElementById("resepo").innerText = 0;
+    abiliObj.sciePoints = 0;
+    document.getElementById("sciepo").innerText = 0;
+}
+
 function fillDropdowns(insertArray, chosenMenu) {
     let menu = document.getElementById(chosenMenu);
     let opts = insertArray;
@@ -54,7 +182,6 @@ document.getElementById('creeddrop').addEventListener('change', (event) => {
             creedset = true;
         virtuevalue = 3;
         virtuevalueoverall = 3;
-        virtext.innerText = 3;
         conviction = 3;
         mercy = 0;
         vision = 0;
@@ -67,7 +194,6 @@ document.getElementById('creeddrop').addEventListener('change', (event) => {
         creedset = true;
         virtuevalueoverall = 4;
         virtuevalue = 4;
-        virtext.innerText = 4;
         conviction = 4;
         mercy = 0;
         vision = 0;
@@ -78,14 +204,12 @@ document.getElementById('creeddrop').addEventListener('change', (event) => {
     }
     document.getElementById("hustarcon").innerText = virtuevalueoverall;
     document.getElementById("convi").innerText = virtuevalueoverall;
-    document.getElementById("virtuetext").innerText = virtuevalueoverall;
     if (chosencreed == '--'){
         creedset = false;
         virtuevalue = 0;
         virtuevalueoverall = 0;
         document.getElementById("hustarcon").innerText = "--";
         document.getElementById("convi").innerText = "--";
-        document.getElementById("virtuetext").innerText = "--";
         document.getElementById("privirt").innerText = "--";
     }
 })
@@ -109,49 +233,37 @@ virbutton.addEventListener('click', (e) => {
     let isButton = target.id;
     switch (isButton) {
         case ('mercy+'):
-            if (virtuevalue > 0) {
-                virtuevalue--;
-                virtext.innerText = virtuevalue;
+            if (mercy < 5) {
                 mercy++;
                 mercytext.innerText = mercy;
             }
             break;
         case ('mercy-'):
-            if (virtuevalue < virtuevalueoverall && mercy > 0) {
-                virtuevalue++;
-                virtext.innerText = virtuevalue;
+            if (mercy > 0) {
                 mercy--;
                 mercytext.innerText = mercy;
             }
             break;
         case ('vision+'):
-            if (virtuevalue > 0) {
-                virtuevalue--;
-                virtext.innerText = virtuevalue;
+            if (vision < 5) {
                 vision++;
                 visiontext.innerText = vision;
             }
             break;
         case ('vision-'):
-            if (virtuevalue < virtuevalueoverall && vision > 0) {
-                virtuevalue++;
-                virtext.innerText = virtuevalue;
+            if (vision > 0) {
                 vision--;
                 visiontext.innerText = vision;
             }
             break;
         case ('zeal+'):
-            if (virtuevalue > 0) {
-                virtuevalue--;
-                virtext.innerText = virtuevalue;
+            if (zeal < 5) {
                 zeal++;
                 zealtext.innerText = zeal;
             }
             break;
         case ('zeal-'):
-            if (virtuevalue < virtuevalueoverall && zeal > 0) {
-                virtuevalue++;
-                virtext.innerText = virtuevalue;
+            if (zeal > 0) {
                 zeal--;
                 zealtext.innerText = zeal;
             }
@@ -163,119 +275,47 @@ backbutton.addEventListener('click', (e) => {
     let isButton = e.target.id;
     let isButtonPoints = isButton.slice(0, 5) + 'point';
     let isButtontext = isButton.slice(0, 5) + 'po';
-    let isButtonfreebiePoints = isButton.slice(0, 5) + 'freepoint';
 
-    if (freebiecode == false) {
-        if (isButton.slice(-1) == '+' && backvalObj[isButtonPoints] < 5 && backvalObj.backpoint > 0) {
+        if (isButton.slice(-1) == '+' && backvalObj[isButtonPoints] < 5) {
             backvalObj.backpoint--;
             backvalObj[isButtonPoints]++;
             document.getElementById(isButtontext).innerText = backvalObj[isButtonPoints];
-            backtext.innerText = backvalObj.backpoint;
         }
         if (isButton.slice(-1) == '-' && backvalObj[isButtonPoints] > 0) {
             backvalObj.backpoint++;
             backvalObj[isButtonPoints]--;
             document.getElementById(isButtontext).innerText = backvalObj[isButtonPoints];
-            backtext.innerText = backvalObj.backpoint;
-        }
-    }
-    else {
-        if (isButton.slice(-1) == '+' && backvalObj[isButtonPoints] < 5 && freebiepoints > 0) {
-            backvalObj[isButtonPoints]++;
-            backvalObj[isButtonfreebiePoints]++;
-            freebiepoints--;
-            document.getElementById(isButtontext).innerText = backvalObj[isButtonPoints];
-            freebietext.innerText = freebiepoints;
-        }
-        if (isButton.slice(-1) == '-' && backvalObj[isButtonPoints] > 0 && backvalObj[isButtonfreebiePoints] > 0) {
-            backvalObj[isButtonPoints]--;
-            backvalObj[isButtonfreebiePoints]--;
-            freebiepoints++;
-            document.getElementById(isButtontext).innerText = backvalObj[isButtonPoints];
-            freebietext.innerText = freebiepoints;
-        }
     }
 });
 
 wilconbutton.addEventListener('click', (e) => {
     let target = e.target;
     let isButton = target.id;
-    if (freebiecode == true) {
         switch (isButton) {
             case ('convi+'):
-                if (freebiepoints > 0 && conviction < 8) {
+                if (conviction < 8) {
                     conviction++;
-                    convictionfreebies++;
-                    freebiepoints--;
-                    freebietext.innerText = freebiepoints;
                     document.getElementById("convi").innerText = conviction;
                 }
                 break;
             case ('convi-'):
-                if (convictionfreebies > 0) {
+                if (conviction > 0) {
                     conviction--;
                     convictionfreebies--;
-                    freebiepoints++;
-                    freebietext.innerText = freebiepoints;
                     document.getElementById("convi").innerText = conviction;
                 }
                 break;
             case ('willp+'):
-                if (freebiepoints > 0 && willpower < 10) {
+                if (willpower < 10) {
                     willpower++;
-                    freebiepoints--;
-                    freebietext.innerText = freebiepoints;
                     document.getElementById("willp").innerText = willpower;
                 }
                 break;
             case ('willp-'):
                 if (willpower > 3) {
                     willpower--;
-                    freebiepoints++;
-                    freebietext.innerText = freebiepoints;
                     document.getElementById("willp").innerText = willpower;
                 }
                 break;
         }
-    }
 });
-
-document.getElementById("freebies").addEventListener('click', (e) => {
-    let warningtxt = "If you enter freebie mode, you can't change any of your prior choices. Are you happy with your current sheet and want to move on?";
-    let doesntworktxt = "You still have points to spend!";
-
-    if (phypriochoice.value == 0 || socpriochoice.value == 0 || menpriochoice.value == 0 ||
-        talentspriochoice.value == 0 || skillpriochoice.value == 0 || knowpriochoice.value == 0 ||
-        attrObj.curmenPoints != 0 || attrObj.curphyPoints != 0 || attrObj.cursocPoints != 0 ||
-        abiliObj.curknoPoints != 0 || abiliObj.curskiPoints != 0 || abiliObj.curtalPoints != 0 ||
-        creedset == false || virtuevalue != 0 || backvalObj.backpoint != 0
-        ){
-        confirm(doesntworktxt);
-    }
-    else {
-    if (confirm(warningtxt)) {
-        freebiecode = true;
-        document.getElementById("creeddrop").disabled = true;
-        phypriochoice.disabled = true;
-        socpriochoice.disabled = true;
-        menpriochoice.disabled = true;
-        talentspriochoice.disabled = true;
-        skillpriochoice.disabled = true;
-        knowpriochoice.disabled = true;
-    }}
-})
-
-document.getElementById("getpdfbutton").addEventListener('click', function(){
-    if (freebiecode == false){
-        confirm("You still have points to spend!")
-    }
-    if (freebiecode == true && freebiepoints != 0){
-        if (confirm("You still have freebiepoints... Cancel if you still want to spend them")){
-            fillForm();
-        }
-    }
-    if (freebiecode == true && freebiepoints == 0){
-        fillForm();
-    }
-
-})
