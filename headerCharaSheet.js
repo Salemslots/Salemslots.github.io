@@ -239,3 +239,28 @@ wilconbutton.addEventListener('click', (e) => {
         }
     }
 });
+
+document.getElementById("freebies").addEventListener('click', (e) => {
+    let warningtxt = "If you enter freebie mode, you can't change any of your prior choices. Are you happy with your current sheet and want to move on?";
+    let doesntworktxt = "You still have points to spend!";
+
+    if (phypriochoice.value == 0 || socpriochoice.value == 0 || menpriochoice.value == 0 ||
+        talentspriochoice.value == 0 || skillpriochoice.value == 0 || knowpriochoice.value == 0 ||
+        attrObj.curmenPoints != 0 || attrObj.curphyPoints != 0 || attrObj.cursocPoints != 0 ||
+        abiliObj.curknoPoints != 0 || abiliObj.curskiPoints != 0 || abiliObj.curtalPoints != 0 ||
+        creedset == false || virtuevalue != 0 || backvalObj.backpoint != 0
+        ){
+        confirm(doesntworktxt);
+    }
+    else {
+    if (confirm(warningtxt)) {
+        freebiecode = true;
+        document.getElementById("creeddrop").disabled = true;
+        phypriochoice.disabled = true;
+        socpriochoice.disabled = true;
+        menpriochoice.disabled = true;
+        talentspriochoice.disabled = true;
+        skillpriochoice.disabled = true;
+        knowpriochoice.disabled = true;
+    }}
+})

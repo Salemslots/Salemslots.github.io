@@ -221,6 +221,7 @@ async function fillForm(){
 }
 
 
+
 document.getElementById("getpdfbutton").addEventListener('click', function(){
     if (freebiecode == false){
         confirm("You still have points to spend!")
