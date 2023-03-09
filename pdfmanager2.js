@@ -221,7 +221,5 @@ async function fillForm(){
 }
 
 
-document.getElementById("getpdfbutton").addEventListener('click', function(){
-        fillForm();
-})
+document.getElementById("getpdfbutton2").addEventListener('click', fillForm())
 

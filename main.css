@@ -31,7 +31,7 @@ color: white;
 form  { display: table;      }
 .p-form     { display: table-row;  }
 label { display: table-cell; padding-right: 12px; }
-input { display: table-cell; }
+input { display: table-cell;}
 
 #phytext, #soctext, #mentext, #taltext, #skilltext, #knowtext, #virtuetext, #backtext{
   display: inline-block;
