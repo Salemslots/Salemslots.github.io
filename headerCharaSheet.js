@@ -264,18 +264,3 @@ document.getElementById("freebies").addEventListener('click', (e) => {
         knowpriochoice.disabled = true;
     }}
 })
-
-document.getElementById("getpdfbutton").addEventListener('click', function(){
-    if (freebiecode == false){
-        confirm("You still have points to spend!")
-    }
-    if (freebiecode == true && freebiepoints != 0){
-        if (confirm("You still have freebiepoints... Cancel if you still want to spend them")){
-            fillForm();
-        }
-    }
-    if (freebiecode == true && freebiepoints == 0){
-        fillForm();
-    }
-
-})
