@@ -184,8 +184,8 @@ let edgeshort = [
     "Discern", "Vigilance", "Burden", "Anathema", "View",
 ]
 
-let edgechoice1;
-let edgechoice2;
+let edgechoice1 = "";
+let edgechoice2 = "";
 
 let background = ['    ', 'Allies', 'Arseneal', 'Bystander', 'Contacts', 'Destiny', 'Exposure', 'Fame', 'Influence', 'Mentor', 'Patron', 'Ressources'];
 

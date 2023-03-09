@@ -221,5 +221,8 @@ async function fillForm2(){
 }
 
 
-document.getElementById("getpdfbutton2").addEventListener('click', fillForm2());
-
+document.getElementById("getpdfbutton2").addEventListener('click', function(){
+        if (confirm("Are all points spend wisely?")){
+            fillForm();
+        }
+})
