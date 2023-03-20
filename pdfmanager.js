@@ -61,8 +61,26 @@ async function fillForm(){
 
     // Fill and Unfill boxes in hopes that itll fix the whole issues it has
 
-    fillbox (1, 358, 'dot', form);
-    unfillbox (1, 358, 'dot'. form);
+
+    fillbox(1, 5, 'dot', form);
+    fillbox(9, 5, 'dot', form);
+    fillbox(17, 5, 'dot', form);
+    fillbox(25, 5, 'dot', form);
+    fillbox(33, 5, 'dot', form);
+    fillbox(41, 5, 'dot', form);
+    fillbox(49, 5, 'dot', form);
+    fillbox(57, 5, 'dot', form);
+    fillbox(65, 5, 'dot', form);
+
+    unfillbox(1, 5, 'dot', form);
+    unfillbox(9, 5, 'dot', form);
+    unfillbox(17, 5, 'dot', form);
+    unfillbox(25, 5, 'dot', form);
+    unfillbox(33, 5, 'dot', form);
+    unfillbox(41, 5, 'dot', form);
+    unfillbox(49, 5, 'dot', form);
+    unfillbox(57, 5, 'dot', form);
+    unfillbox(65, 5, 'dot', form);
 
 
 
@@ -77,7 +95,6 @@ async function fillForm(){
     fillbox(49, attrObj.perPoints, 'dot', form);
     fillbox(57, attrObj.intPoints, 'dot', form);
     fillbox(65, attrObj.witPoints, 'dot', form);
-
 
     // Fill in Abilities
 
