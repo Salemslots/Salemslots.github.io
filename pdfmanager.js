@@ -7,6 +7,13 @@ function fillbox (boxnumber, boxvalue, boxname, forms){
     }
 }
 
+function unfillbox (boxnumber, boxvalue, boxname, forms){
+    for (let step = 0; step < boxvalue; step++){
+        let box = boxnumber + step;
+        forms.getCheckBox(boxname + box).uncheck();
+    }
+}
+
 async function fillForm(){
 
     const formUrl = 'https://SamCK98.github.io/HtR1-Page_Editable.pdf';
@@ -52,7 +59,13 @@ async function fillForm(){
     creedField.select(document.getElementById('creeddrop').value);
     staconField.select(document.getElementById('hustarcon').innerText);
 
-    
+    // Fill and Unfill boxes in hopes that itll fix the whole issues it has
+
+    fillbox (1, 358, 'dot', form);
+    unfillbox (1, 358, 'dot'. form);
+
+
+
     // Fill in Attributes
 
     fillbox(1, attrObj.strPoints, 'dot', form);
