@@ -28,9 +28,9 @@ color: white;
 }
 
 form  { display: table;      }
-.p-form     { display: table-row;  }
-label { display: table-cell; padding-right: 12px; }
-input { display: table-cell;}
+.p-form     { display: table-row;}
+label { display: table-cell; padding-right: 12px; margin-top: 5px;}
+input { display: table-cell; margin-top: 5px;}
 
 #phytext, #soctext, #mentext, #taltext, #skilltext, #knowtext, #virtuetext, #backtext{
   display: inline-block;
@@ -42,7 +42,23 @@ h3{
   padding-right: 5px;
 }
 
+button{
+  width: 20px;
+  text-align: center;
+}
 
+.wide-button{
+  width: 120px;
+}
+
+select{
+  margin-top: 5px;
+  width: 120px;
+}
+
+input{
+  width: 115px;
+}
 
 @media screen and (min-width: 960px) {
   body{
