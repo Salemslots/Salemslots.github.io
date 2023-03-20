@@ -1,3 +1,3 @@
 # SamCK98.github.io
-my webbed site!
-Still under development, look away
+
+Website for housing my projects, currently only for the Hunter the Reckoning Character Creator :)
