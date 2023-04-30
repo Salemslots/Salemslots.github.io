@@ -12,6 +12,20 @@ img{
   width: 50%;
 }
 
+#introbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2%;
+}
+
+#links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 a{
   color: #915dd6;
   text-decoration: none;
