@@ -148,7 +148,7 @@ let archetypes =
     [
         '--', 'Addict', 'Architect', 'Autocrat', 'Bon Vivant', 'Bravo', 'Capitalist', 'Caregiver', 'Celebrant', 'Chameleon', 'Child', 'Competitor',
         'Conformist', 'Conniver', 'Creep Show', 'Curmudgeon', 'Dabbler', 'Deviant', 'Director', 'Dreamer', 'Enigma', 'Eye of the storm',
-        'Fanatic', 'Gallant', 'Guru', 'Gambler', 'Idealist', 'Loner', 'Masocist', 'Monster', 'Pedagogue', 'Penitent', 'Perfectionist',
+        'Fanatic', 'Gallant', 'Guru', 'Gambler', 'Idealist', 'Loner', 'Masochist', 'Monster', 'Pedagogue', 'Penitent', 'Perfectionist',
         'Rebel', 'Rogue', 'Sadist', 'Scientist', 'Sociopath', 'Soldier', 'Survivor', 'Thrill - Seeker', 'Traditionalist', 'Trickster'
     ];
 
@@ -187,7 +187,7 @@ let edgeshort = [
 let edgechoice1 = "";
 let edgechoice2 = "";
 
-let background = ['    ', 'Allies', 'Arseneal', 'Bystander', 'Contacts', 'Destiny', 'Exposure', 'Fame', 'Influence', 'Mentor', 'Patron', 'Ressources'];
+let background = ['    ', 'Allies', 'Arsenal', 'Bystander', 'Contacts', 'Destiny', 'Exposure', 'Fame', 'Influence', 'Mentor', 'Patron', 'Resources'];
 
 let freebiecode = false;
 let freebiepoints = 21;

@@ -181,7 +181,7 @@ capbutton2.addEventListener('click', (e) => {
     }
 
     if (freebiecode == false) {
-        if (isButton.slice(-1) == '+' && abiliObj[isButtonPoints] < 5 && abiliObj[isButtonpsm] > 0) {
+        if (isButton.slice(-1) == '+' && abiliObj[isButtonPoints] < 3 && abiliObj[isButtonpsm] > 0) {
             abiliObj[isButtonPoints]++;
             abiliObj[isButtonpsm]--;
             document.getElementById(isButtontext).innerText = abiliObj[isButtonPoints];
